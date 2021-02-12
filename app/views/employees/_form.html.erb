@@ -11,32 +11,29 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
+<div class="container">
+  <div class="row">
+        <div class="mb-3">        
+          <%= form.label :name, class:"form-label h6"  %>
+        <%= form.text_field :name , class:"form-control"  ,placeholder:"write the name" %>
+        </div>
+        <div class="field">
+          <%= form.label :position, class:"form-label h6"  %>
+          <%= form.text_field :position , class:"form-control",placeholder:"write the position" %>
+        </div>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+        <div class="field">
+          <%= form.label :employee_number, class:"form-label h6" %>
+          <%= form.number_field :employee_number, class:"form-control", placeholder:"write the employee númber"  %>
+        </div>
 
-  <div class="field">
-    <%= form.label :position %>
-    <%= form.text_field :position %>
-  </div>
+        <div class="field">
+          <%= form.label :private_number,class:"form-label h6"  %>
+          <%= form.number_field :private_number, class:"form-control",placeholder:"write the private númber"  %>
+        </div>
 
-  <div class="field">
-    <%= form.label :employee_number %>
-    <%= form.number_field :employee_number %>
+        <div class="actions">
+          <%= form.submit class:"btn btn-primary float-end col-md-1.9" %>
+        </div> <% end %>
   </div>
-
-  <div class="field">
-    <%= form.label :private_number %>
-    <%= form.number_field :private_number %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+</div>

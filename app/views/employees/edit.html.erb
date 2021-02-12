@@ -1,6 +1,12 @@
-<h1>Editing Employee</h1>
-
-<%= render 'form', employee: @employee %>
-
-<%= link_to 'Show', @employee %> |
-<%= link_to 'Back', employees_path %>
+   <h1> Editing Employee</h1>
+<div class="container" >
+    <div class="row">
+    <div class="col-md-11 offset-md-10 ml-5">
+            <%= link_to 'Show', @employee, class:"color_text btn btn-info col-md-1"  %> 
+            <%= link_to 'Back', employees_path, class:"btn btn-dark color_text " %>
+      </div>
+       <div class="col-md-12">
+            <%= render 'form', employee: @employee %>
+      </div>
+    <div>
+</div>

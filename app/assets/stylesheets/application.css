@@ -13,3 +13,6 @@
  *= require_tree .
  *= require_self
  */
+.color_text {
+    color:#fff;
+}
